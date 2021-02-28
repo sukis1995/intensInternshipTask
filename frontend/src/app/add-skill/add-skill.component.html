@@ -1,0 +1,14 @@
+<div>
+    <form [formGroup]="formGroup">
+        <h1>Add Skill</h1>
+        <div>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Name of skill" formControlName="name" name="name" >
+               
+            </mat-form-field>
+            <button mat-raised-button color="primary" (click)="addSkill()">Add New Skill</button>
+        </div>
+    </form>
+</div>
+

@@ -1,0 +1,52 @@
+
+
+.candidatesComponent{
+    width: 100%;
+    float: left;
+
+}
+.candidates{
+   display: grid;
+    width: 50%;
+}
+.buttons{
+   
+    align-items: center;
+    width: 100%;
+    min-height:60px;
+    margin-bottom: 10px;
+    background-color: lightgrey;
+    
+}
+
+.button{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.buttonSearch{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: right;
+}
+
+.searchByNameForm{
+   
+    float: right;
+    margin-right: 50px;
+    border : 1px 
+    solid lightgrey;
+    margin: 20px;
+    
+}
+
+.buttonByName{
+    margin: 5px;
+    min-height: 50px;
+}
+.forms{
+    float: right;
+    display: grid;
+}

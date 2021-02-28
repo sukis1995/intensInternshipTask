@@ -1,0 +1,12 @@
+.buttonDelete{
+    background-color: red;
+    border: 1px solid orangered;
+    padding: 10px;
+    margin-right: 40px;
+    align-content: flex-end;
+    float: right;
+    }
+
+    .skillComponent{
+        margin:10px;
+    }

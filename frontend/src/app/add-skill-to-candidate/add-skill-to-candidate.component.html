@@ -1,0 +1,15 @@
+<div class="searchCandidateBySkillsClass">
+    <form [formGroup]="formGroup">
+        <h4>Add Skill</h4>
+        <mat-form-field appearance="fill">
+          <mat-label>Skills</mat-label>
+          <mat-select formControlName="skill" name="skill">
+            <mat-option *ngFor="let skill of uniqueSkills" [value]="skill">
+              {{skill.name}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="addSkill()">Add Skill</button>
+       
+    </form>
+</div>

@@ -1,0 +1,56 @@
+.candidate{
+   float: right;
+   min-width: 400px;
+       
+}
+.example-card{
+    background-color: rgb(211, 211, 211);
+    min-width: 700px;
+    float: right;
+    margin-bottom: 20px;
+    max-height: 150px;
+    text-align: center;
+    
+}
+.selectField{
+    
+    vertical-align: top;
+}
+
+.skills{
+    float: left;
+    vertical-align: 75px;
+}
+
+.buttons{
+    float: right;
+  
+    vertical-align: top;
+}
+
+/**
+.title{
+    text-align: center;
+    float: left;
+}
+.candidateDetail{
+    text-align: center;
+    background-color: lightyellow;
+    border: 1px solid lightgray;
+    display: flex;
+    padding: 10px;
+    min-height: 30px;
+    margin: 5px;
+}
+
+
+
+
+
+.skills{
+    float: right;
+    margin-top: -5%;
+    min-height: 30px;
+   
+}
+*/

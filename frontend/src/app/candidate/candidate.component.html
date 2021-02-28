@@ -1,0 +1,26 @@
+
+<div class="candidate">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title class="title">{{candidate.fullName}}</mat-card-title>
+        <mat-card-subtitle>{{candidate.email}}</mat-card-subtitle>
+        <mat-card-subtitle>{{candidate.contactNumber}}</mat-card-subtitle>
+        <mat-card-subtitle>{{candidate.dateOfBirth|date}}</mat-card-subtitle>
+      </mat-card-header>
+    <mat-card-content class="skills">
+      <mat-form-field class="selectField" appearance="fill">
+        <mat-label>View skills</mat-label>
+        <mat-select >
+          <mat-option value="option1" *ngFor="let skill of skills" [value]="skill.id"><SkillComponent [skill]="skill" [idCandidate]="candidate.id"></SkillComponent></mat-option>
+        </mat-select>
+      </mat-form-field>
+      </mat-card-content>
+      <mat-card-actions class="buttons">
+        <button mat-raised-button color="primary" (click)="popUp()">Add Skill</button>
+        <button mat-raised-button color="warn" class="buttonDelete" (click)="deleteCandidate()">Delete candidate</button>
+      </mat-card-actions>
+    </mat-card>
+
+    
+</div>

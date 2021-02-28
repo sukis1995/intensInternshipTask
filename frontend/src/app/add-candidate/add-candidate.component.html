@@ -1,0 +1,35 @@
+<div>
+<form [formGroup]="formGroup">
+    <h1>Add Candidates</h1>
+    <div>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Full name</mat-label>
+        <input matInput placeholder="Full Name" formControlName="fullName" name="fullName" >
+    </mat-form-field>
+</div>
+<div>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Contact Number</mat-label>
+        <input matInput formControlName="contactNumber" placeholder="Contact Number" name="contactNumber">
+    </mat-form-field>
+</div>
+    <div>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" placeholder="email@sss" name="email">
+    </mat-form-field>
+</div>
+
+<div>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="dateOfBirth">
+        <mat-datepicker-toggle matSuffix [for]="picker">
+          <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+        </mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <button mat-raised-button color="primary" (click)="addCandidate($event)">Add Candidate</button>
+</form>
+</div>
