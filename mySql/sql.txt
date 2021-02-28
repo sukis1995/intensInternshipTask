@@ -1,0 +1,10 @@
+CREATE USER IF NOT EXISTS jwduser IDENTIFIED BY 'pass';
+
+DROP DATABASE IF EXISTS codingTaskIntership;
+CREATE DATABASE codingTaskIntership DEFAULT CHARACTER SET utf8;
+
+USE codingTaskIntership;
+
+GRANT ALL ON codingTaskIntership.* TO 'user'@'%';
+
+FLUSH PRIVILEGES;
